@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "sqlmastervyom.netlify.app" }));
 app.use(bodyParser.json());
 
 // Database Connection
