@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({  origin: "https://sqlmastervyom.netlify.app", // Allow frontend
+app.use(cors({  origin: ["https://sqlmastervyom.netlify.app","https://sqlmasteradmin.netlify.app"], // Allow frontend
     methods: "GET,POST,PUT,DELETE",
     allowedHeaders: "Content-Type,Authorization" }));
 app.use(bodyParser.json());
