@@ -4,6 +4,9 @@ const DataSchema = new mongoose.Schema({
   name: { type: String, required: true },  // Store name as String
   answers: { type: Object, required: true }, // Store answers as Object
   score: { type: Number, required: true }  // Store score as Number
+},
+{
+  timestamps:true
 });
 
 const DataModel = mongoose.model("Data", DataSchema);
